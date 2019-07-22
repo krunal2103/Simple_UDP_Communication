@@ -8,7 +8,8 @@ find_package( Boost REQUIRED COMPONENTS system)
 include_directories(${Boost_INCLUDE_DIRS})
 
 FILE(GLOB SOURCE_FILES *.cpp)
+FILE(GLOB INC_FILES *.h)
 
-add_executable(UDPClient ${SOURCE_FILES})
+add_executable(client ${INC_FILES} ${SOURCE_FILES})
 
-target_link_libraries(${PROJECT_NAME} "${Boost_LIBRARIES}")
+target_link_libraries(client "${Boost_LIBRARIES}")
