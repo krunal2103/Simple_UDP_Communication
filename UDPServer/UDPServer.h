@@ -1,3 +1,6 @@
+#ifndef UDPSERVER_H_
+#define UDPSERVER_H_
+
 #include <string>
 #include <iostream>
 #include <boost/asio.hpp>
@@ -26,3 +29,5 @@ private:
     std::array<char, 1024> recvBuffer_{ {0} };
     std::string data_;
 };
+
+#endif

@@ -1,3 +1,6 @@
+#ifndef UDPCLIENT_H_
+#define UDPCLIENT_H_
+
 #include <boost/asio/deadline_timer.hpp>
 #include <boost/asio/io_service.hpp>
 #include <boost/asio/ip/udp.hpp>
@@ -54,3 +57,5 @@ private:
   std::array<char, 1024> recvBuffer_;
   std::string data_;
 };
+
+#endif
