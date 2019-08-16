@@ -1,0 +1,17 @@
+language: cpp
+
+compiler: gcc
+
+os: linux
+dist: bionic
+
+addons:
+  apt:
+    packages:
+      - libboost-system
+
+script:
+  - mkdir build
+  - cd build
+  - cmake ..
+  - make
