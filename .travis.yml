@@ -8,7 +8,7 @@ dist: bionic
 addons:
   apt:
     packages:
-      - libboost-system
+      - libboost-system-dev
 
 script:
   - mkdir build
